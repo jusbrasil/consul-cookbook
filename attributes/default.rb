@@ -70,7 +70,7 @@ else
 end
 
 default['consul']['servers'] = []
-default['consul']['init_style'] = 'init'   # 'init', 'runit', 'systemd'
+default['consul']['init_style'] = 'runit'   # 'init', 'runit', 'systemd'
 
 case node['consul']['init_style']
 when 'runit' || 'systemd'
