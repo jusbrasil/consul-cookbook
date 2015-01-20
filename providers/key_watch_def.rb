@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-use_inline_resources
+use_inline_resources if defined? use_inline_resources
 
 action :create do
   file new_resource.path do
